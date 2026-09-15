@@ -59,16 +59,4 @@ MCP endpoint:
 `/`
 
 The gateway requires `Authorization: Bearer <MCP_AUTH_TOKEN>` and removes that gateway credential before forwarding the request to the internal Luno MCP server.
-
-## Security
-
-- Keep the Luno API secret server-side only.
-- Do not commit credentials to GitHub.
-- Use HTTPS in production.
-- Use a strong, randomly generated `MCP_AUTH_TOKEN`.
-- Grant the Luno API key only the permissions actually required.
-- Because write operations can place/cancel orders or perform conversions, review consequential actions before executing them.
-
-## Upstream
-
 This project wraps the official Luno MCP server rather than reimplementing the Luno API.
