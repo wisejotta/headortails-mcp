@@ -4,7 +4,7 @@ Secure gateway for connecting ChatGPT-compatible MCP clients to the official Lun
 
 ## Architecture
 
-ChatGPT / MCP client → HTTPS gateway → official `luno-mcp` → Luno API
+ChatGPT / MCP client → HTTPS gateway →  `luno-mcp` → Luno API
 
 The Luno API secret stays on the server. It is never placed in this repository or sent to ChatGPT.
 
